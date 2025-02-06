@@ -132,7 +132,7 @@ resource "aws_key_pair" "ssh" {
 locals {
   worker_templates_cpu = { for k, v in {
     "m5-large-system" : {
-      instance_types = ["m5.4x.large"]
+      instance_types = ["m5.4xlarge"]
       desired_size   = 1
 
       labels = {
